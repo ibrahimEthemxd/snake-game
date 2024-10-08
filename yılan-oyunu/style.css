@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sulphur Point", sans-serif;
+}
+
+html,
+body{
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #373131;
+}
+.wrapper{
+    width: 70vmin;
+    height: 80vmin;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 0 45px #604747;
+    background-color: #10adb5;
+}
+.game-details{
+    color: #b8c8d8;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-board{
+    width: 100%;
+    height: 100%;
+    background-color: #39384e;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+.play-board .food{
+    background-color: #e12525;
+}
+.play-board .head{
+    background-color: #3a8fb0;
+}
+
+.again{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+    background-color: #10adb5;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 45px #604747;
+    display: none;
+}
+.again .score{
+    color: #d2d8dd;
+    font-weight: bold;
+}
+.again .btn{
+    margin-top: 1rem;
+    padding: 5px 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 1rem;
+    border: 0;
+    cursor: pointer;
+    background-color: #23282e;
+    color: #ddd;
+}
+.again .btn:hover{
+    background-color: #373131;
+}
